@@ -1,0 +1,40 @@
+
+h1{
+    width: 1000px;
+    text-align: center;
+}
+img{
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+.wrap{
+    width: 1000px;
+    border: 1px solid #000;
+    float: left;
+}
+.clearFloat:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.pic{
+    border: 1px solid #000;
+    margin: 10px;
+}
+.picbox{
+    float: left;
+}
+.number{
+    width: 30px;
+}
+.salePrice{
+    color: #F00;
+    font-size: 18px;
+}
+.bottom{
+    text-align: center;
+}
+#btn{
+    margin-left: 100px;
+}
