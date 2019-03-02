@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.mobile.min.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile.min.js"></script>
+    <style>
+        /*.ui-bar-e,.ui-btn-up-e{*/
+            /*background-image: -webkit-gradient(linear,left top,left bottom,from(#f0f0f0),to(#ddd));*/
+            /*background-image: -webkit-linear-gradient(#f0f0f0,#ddd);*/
+            /*background-image: -moz-linear-gradient(#f0f0f0,#ddd);*/
+            /*background-image: -ms-linear-gradient(#f0f0f0,#ddd);*/
+            /*background-image: -o-linear-gradient(#f0f0f0,#ddd);*/
+            /*background-image: linear-gradient(#f0f0f0,#ddd);*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="header" data-theme="e" data-position="fixed">
+            <a href="#"  data-iconpos="notext">返回</a>
+            <h3>音乐播放器</h3>
+        </div>
+        <div data-role="content">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <a href="#"><img src="img/11.png" alt=""></a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="javascript:void(0)"  class="lianjie"><img src="img/12.png" alt=""></a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#"><img src="img/13.png" alt=""></a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="#"><img src="img/14.png" alt=""></a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#"><img src="img/15.png" alt=""></a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#"><img src="img/16.png" alt=""></a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="#"><img src="img/17.png" alt=""></a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#"><img src="img/18.png" alt=""></a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#"><img src="img/19.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-theme="e" data-position="fixed">
+            <div data-role="navbar">
+                <ul >
+                    <li><a href="#" data-icon="home">主页</a></li>
+                    <li><a href="#" data-icon="search">搜索</a></li>
+                    <li><a href="#" data-icon="star">收藏</a></li>
+                    <li><a href="#" data-icon="gear">设置</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    $(".lianjie").eq(0).click(function () {
+        location.href = "list.html"
+    })
+
+</script>
+
+</html>

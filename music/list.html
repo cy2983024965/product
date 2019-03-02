@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.mobile.min.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile.min.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/list.js"></script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-theme="e" data-position="fixed">
+        <a href="#" data-icon="back" data-iconpos="notext" data-rel="back">返回</a>
+        <h3>音乐播放器</h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" id="musicList">
+            <script type="text/template" id="template">
+                {{#each song_list}}
+                    <li>
+                    <a href="javascript:void(0)" data-ajax="false" class="nextList" musicy="">
+                        <img src="{{pic_big}}" alt="">
+                        <h3>{{album_title}}</h3>
+                        <p>{{author}}</p>
+                        <p>{{title}}</p>
+                    </a>
+                    </li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="e" data-position="fixed">
+        <div data-role="navbar">
+            <ul >
+                <li><a href="#" data-icon="home">主页</a></li>
+                <li><a href="#" data-icon="search">搜索</a></li>
+                <li><a href="#" data-icon="star">收藏</a></li>
+                <li><a href="#" data-icon="gear">设置</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>

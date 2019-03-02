@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.mobile.min.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile.min.js"></script>
+    <script src="js/play.js"></script>
+    <style>
+        div[name=yangshi]{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div data-role="page" >
+    <audio src="music/zhuoniqiu.mp3" id="audio" >
+        <!--controls-->
+        <!--<source src="music/a.mp3"></source>-->
+        <!--<source src="music/a.ogg"></source>-->
+    </audio>
+    <div data-role="header" data-theme="e" data-position="fixed">
+        <a href="#" data-icon="back" data-iconpos="notext" data-rel="back">返回</a>
+        <h3>音乐播放器</h3>
+    </div>
+        <div data-role="content">
+        <div>
+            <img src="img/tu1.png" alt="">
+            <h2>女儿情</h2>
+            <input type="range" id="progress" name="points" value="0" min="0" max="100"/>
+            <div data-role="controlgroup" data-type="horizontal" name="yangshi" data-ajax="false">
+                <a data-role="button" id="addVolume">音量+</a>
+                <a data-role="button" id="play">播放</a>
+                <a data-role="button" id="stop">暂停</a>
+                <a data-role="button" id="mute">静音</a>
+                <a data-role="button" id="subVolume">音量-</a>
+            </div>
+            <!--<div data-role="controlgroup" data-type="vertical">-->
+                <!--<a data-role="button" id="addVolume">+</a>-->
+                <!--<a data-role="button" id="subVolume">-</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div data-role="footer" data-theme="e" data-position="fixed">
+        <div data-role="navbar">
+            <ul >
+                <li><a href="#" data-icon="home">主页</a></li>
+                <li><a href="#" data-icon="search">搜索</a></li>
+                <li><a href="#" data-icon="star">收藏</a></li>
+                <li><a href="#" data-icon="gear">设置</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script type="text/javascript" charset="utf-8">
+
+    // var video = document.getElementById("audio");
+    // var val = document.getElementById("progress");
+    // // console.log(video.currentTime)//拿取当前播放的时间
+    // // console.log(video.duration)//拿取当前音频的总时间
+    //
+    // setInterval(function () {
+    //
+    //     document.getElementById("progress").value = Math.floor((100/video.duration)*video.currentTime);
+    //     document.getElementsByClassName("ui-slider-handle")[0].style.left = document.getElementById("progress").value+"%";
+    //
+    // },1000)
+    </script>
+</html>
