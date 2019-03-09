@@ -1,0 +1,11 @@
+.wrap{
+	background: hotpink;
+	height: 800px;
+	width: 800px;
+	/* background-image: url(../img/bg11.jpg); */
+}
+td{
+	width: 200px;
+	height: 150px;
+
+}
