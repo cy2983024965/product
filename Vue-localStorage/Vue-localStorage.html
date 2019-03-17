@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/table.css"/>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="cent">
+				<h2>保存数据，显示数据</h2>
+				<input type="text" class="bord-cs" placeholder="用户名" value="" v-model="userName" /><br />
+				<input type="text" class="bord-cs" placeholder="年龄" v-model="age"/><br />
+				<input type="radio" name="sex" value="男" v-model="sex" />男
+				<input type="radio" name="sex" value="女" v-model="sex"/>女<br />
+				<input type="button" value="添加数据" @click="add()" />	
+			</div>
+			<hr />
+			<table border="1" align="center">
+				<thead>
+					<th>序号</th>
+					<th>姓名</th>
+					<th>年龄</th>
+					<th>性别</th>
+					<th>操作</th>
+				</thead>
+				<tbody>
+					<tr v-for="(d,i) in arr">
+						<td>{{i+1}}</td>
+						<td>{{d.name}}</td>
+						<td>{{d.age}}</td>
+						<td>{{d.sex}}</td>
+						<td><button @click="dele(i)">删除</button><button @click="updata(i)">修改</button></td>	
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script src="js/vue.js"></script>
+	<script src="js/table.js"></script>
+</html>

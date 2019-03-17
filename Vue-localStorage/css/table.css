@@ -1,0 +1,29 @@
+th{
+	width: 250px;
+}
+hr{
+	margin:30px 0;
+}
+td{
+	text-align: center;
+}
+tr{
+	line-height: 50px;
+}
+td>button{
+	margin-left: 10px;
+}
+.cent{
+	width: 300px;
+	margin: 0 auto;
+}
+.wrap{
+	width: 1920px;
+}
+.bord-cs{
+	height: 30px;
+	width: 210px;
+}
+input{
+	margin-bottom: 10px;
+}
