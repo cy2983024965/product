@@ -1,0 +1,202 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #e6e6e6;
+}
+.center{
+	
+	width: 100%;
+	margin: 0 auto;
+}
+.tou{
+	width: 1000px;
+	margin: 0 auto;
+	
+	height: 150px;
+    border-bottom: 5px solid #b4b4b4;
+	
+}
+.toul{
+	float: left;
+	font-size: 60px;
+	color: #024a8c;
+	margin: 55px 0 30px 0 ;
+	
+}
+.tour{
+	float: right;
+	width: 200px;
+	height: auto;
+	margin-top: 120px;
+}
+.tour span{
+	color: #024a8c;
+	margin-right: 20px;
+}
+.tour a{
+	text-decoration:none;
+	color: #024A8C;
+}
+.tour a:hover{
+	color: orangered;
+}
+.nei{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.nei1{
+	width: 752px;
+	height: 777px;
+	background:url(../img/zhu.png) no-repeat;
+	margin: 30px 0 0 110px;
+	float: left;
+}
+.nei1>h3{
+	height:100px ;
+	line-height: 100px;
+	text-align: center;
+	font-size: 32px;
+	color: #7c7c7c;
+}
+.nei1>h5{
+	height:50px ;
+	line-height: 50px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #7c7c7c;
+	margin-left: 30px;
+}
+.nei1>hr{
+	width: 90%;
+	margin-left: 20px;
+	
+}
+.show{
+	height: 300px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+#box{
+	position: relative;
+	height: 3300px;
+	top:0;
+}
+.prepare{
+	height: 300px;
+	width: 652px;
+	margin-left: 50px;
+}
+.nei1>.show .timu{
+	height: 300px;
+	width: 652px;
+	margin-left: 50px;
+}
+.timu>p{
+	height: 100px;
+	padding-top: 20px;
+	line-height: 30px;
+}
+.nei1>.show .prepare>span{
+	display: inline-block;
+	height: 300px;
+	width: 500px;
+	line-height: 300px;
+	text-align: center;
+	font-size: 56px;
+}
+.anniu{
+	display: inline-block;
+	text-align: center;
+	margin-top: 50px;
+	width:700px;
+	height: 60px;
+	
+}
+.nei1 .btn{
+	width: 105px;
+	height: 33px;
+	color: white;
+	background:url(../img/anniu2.png);
+	border: 0 none;
+}
+.nei1 .btn:last-child{
+	margin-left: 50px;
+}
+.nei2{
+	width: 100px;
+	height: auto;
+	float: right;
+	margin: 30px 20px 0 0;
+}
+.nei2_1{
+	background: url(../img/time.png)  no-repeat 60px 0px;
+	font-size: 18px;
+	color: #3b3b3b;
+}
+.nei2_2{
+	font-size: 30px;
+	color: #3B3B3B;
+	margin-top: 10px;
+}
+
+.nei2_3{
+	width: 95px;
+	height: 28px;
+	background: url(../img/anniu.png) no-repeat;
+	border: 0 none;
+	color: #ffffff;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.resu{
+	opacity: 0.3;
+}
+.wrap{
+	position: fixed;
+	width: 400px;
+	height: 200px;
+	right:0px;
+    bottom: 100px;
+	background: #87CEEB;
+	/* opacity: ; */
+
+	border: 1px solid pink;
+}
+.showt{
+	float: left;
+	width: 75px;
+	height: 75px;
+	margin-left: 37.5px;
+	margin-top: 50px;
+	overflow: hidden;
+	border: 1px solid skyblue;
+	border-radius:50%;
+}
+.lottery{
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	left: 50%;
+	margin-left: -30px;
+	top: 140px;
+}
+ul{
+	list-style: none;	
+	width: 75px;
+	height: 675px;
+}
+ul>li{
+	height: 75px;	
+}
+ul>li>img{
+	width: 75px;
+	height: 75px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="publicJs/common.js"></script>
+		<script src="publicJs/jquery.js"></script>
+		<link rel="stylesheet" href="css/new_file.css">
+	</head>
+	<body>
+	
+	<div class="center">
+		<div class="tou">
+			<div class="toul">数学考试系统</div><!--toul-->
+			<div class="tour"><span class="usercy">用户：ABCDEFGHI</span><a href="javascript:void(0)" id="quit">退出</a></div><!--tour-->
+		</div><!--tou-->
+		<div class="nei clear">
+			<div class="nei1">
+				<h3>数学考试题目</h3>
+				<h5>描述：这是针对个人逻辑综合能力的一个测试，测试智力在什么范围。</h5>
+				<hr>
+				<div class="show">
+					<div id='box'>
+						<div class="prepare">
+							<span>
+								准备考试
+							</span>
+						</div>
+						<div class="timu">
+							<p>1.var a = 1,b=2;a = a^b;b = a^b;a = a^b;b为多少。</p>
+							<input type='radio' name="first"/>A.1
+							<input type='radio' name="first"/>B.2
+							<input type='radio' name="first"/>C.3
+							<input type='radio' name="first"/>D.0
+							<!-- <p>答案为1</p> -->
+						</div>
+						<div class="timu">
+							<p>2.用冒泡法对一组数:37,21,3,56,9,7.进行排序时，经过多少趟排序后得到一组数:3,9,7,21,37,56.</p>
+							<input type='radio' name="two"/>A.2
+							<input type='radio' name="two"/>B.3
+							<input type='radio' name="two"/>C.4
+							<input type='radio' name="two"/>D.5
+							<!-- <p style="color:red;">根据冒泡排序第一次:21,3,37,9,7；第二次:3,21,9,7,37,56第三次:3,9,7,21,37,56</p> -->
+						</div>	
+						<div class="timu ">
+							<p>3.一对夫妇，先后生了两个孩子，其中一个是女孩，问另一个是男孩的概率是多少？</p>
+							<input type='radio' name="three"/>A.1/3
+							<input type='radio' name="three"/>B.2/3
+							<input type='radio' name="three"/>C.1/2
+							<input type='radio' name="three"/>D.1/4
+							<!-- <p>先后两个孩子 概率为:男男，男女，女女，女男；其中一个是女孩另一个是男孩的概率2/3</p> -->
+						</div>	
+						<div class="timu ">
+							<p>4.算法的三种基本结构是。</p>
+							<input type='radio' name="four"/>A.顺序结构、模块结构、条件结构
+							<input type='radio' name="four"/>B.顺序结构、循环结构、模块结构<br>
+							<input type='radio' name="four"/>C.顺序结构、条件结构、循环结构
+							<input type='radio' name="four"/>D.模块结构、条件结构、循环结构
+							<!-- <p>答案：c  提示：百度去</p> -->
+						</div>
+						<div class=" timu">
+							<p>5.下列说法不正确的是。</p>
+							<input type='checkbox' name="checkbox1"/>A.0既不是正数,也不是负数 
+							<input type='checkbox' name="checkbox1"/>B.1是绝对值最小的数<br>
+							<input type='checkbox' name="checkbox1"/>C.一个有理数不是整数就是分数
+							<input type='checkbox' name="checkbox1"/>D.0的绝对值是0  
+							
+						</div>
+						<div class="timu">
+							<p>6.下列说法中正确的是</p>
+							<input type='checkbox' name="checkbox2"/>A.最小的整数是0
+							<input type='checkbox' name="checkbox2"/>B.互为相反数的两个数的绝对值相等<br>
+							<input type='checkbox' name="checkbox2"/>C.有理数分为正数和负数
+							<input type='checkbox' name="checkbox2"/>D.如果两个数的绝对值相等,那么这两个数相等
+						</div>
+						<div class="timu">
+							<p>7.一个自然数,把它增加10%以后再减少10%,这个数大小没变。</p>
+							<label><input name="radio1" type="radio" value="" />正确 </label>
+							<label><input name="radio1" type="radio" value="" />错误 </label>
+						</div>
+						<div class="timu">
+							<p>8.绝对值小于2的整数有3个。</p>
+							<label><input name="radio2" type="radio" value="" />正确 </label>
+							<label><input name="radio2" type="radio" value="" />错误 </label>
+						</div>
+						<div class="timu">
+							<p>9.var x=5,y=-20;if(x<0){x=y-3}else{y=y+3};alert(x-y+","+(x+y))。</p>
+							<input type="text" id="" placeholder="请输入答案" />
+						</div>
+						<div class="timu">
+							<p>10.有两个盒子，50个红球和50个黑球，现在设计一种分配方案，使得随机选择一个<br>盒子，然后随机选择一个球，这个球是红球的最大概率是多少？。</p>
+							<input type="text" id="" placeholder="请输入答案" />
+						</div>
+						
+					</div>
+				</div>
+				<hr>
+				<div class="anniu">
+					<button type="button" class="btn" id="pre_btn">上一题</button>
+					<button type="button" class="btn" id="next_btn">下一题</button>
+				</div>
+			</div>
+			<div class="nei2">
+				<div class="nei2_1">倒计时</div>
+				<div class="nei2_2" >10:00</div>
+				<button class="nei2_3" id="btn" type="button">开始答题</button>
+				<button class="nei2_3 resu" id="submit" type="button" disabled>提交答案</button>
+			</div>
+		</div>
+		
+	</div>
+	</body>	
+	<script src="js/index.js"></script>
+</html>

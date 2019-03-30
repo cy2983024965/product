@@ -1,0 +1,35 @@
+var question=[
+	{
+		"subject":第一题,
+		"option1":A:1,
+		"option2":B:2,
+		"option3":C:3,
+		"option4":D:4,
+		"answer":1
+	},
+	{
+		"subject":第二题
+		"option1":A:1,
+		"option2":B:2,
+		"option3":C:3,
+		"option4":D:4,
+		"answer":1
+	},
+	{
+		"subject":第三题
+		"option1":A:1,
+		"option2":B:2,
+		"option3":C:3,
+		"option4":D:4,
+		"answer":1
+	}
+	{
+		"subject":第四题
+		"option1":A:1,
+		"option2":B:2,
+		"option3":C:3,
+		"option4":D:4,
+		"answer":1
+	}
+
+]

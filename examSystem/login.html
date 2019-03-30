@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数学在线考试系统</title>
+		<script src="publicJs/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/css.css">
+		<script src="publicJs/Radom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="publicJs/commCode.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/design.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+	<!-- <button id="btnlocal">清空本地的localStrage</button> -->
+		<div class="header">
+			<div class="warp clear">
+				<div class="logo"><img src="img/logo.png" alt=""></div>
+				<div class="head-icon clear">
+					<div class="icon left">
+						<img src="img/icon1.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon left">
+						<img src="img/icon2.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon left">
+						<img src="img/icon3.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon left">
+						<img src="img/icon4.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon right">
+						<img src="img/icon5.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon right">
+						<img src="img/icon6.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon right">
+						<img src="img/icon7.png" alt="">
+						<span>XXX</span>
+					</div>
+					<div class="icon right">
+						<img src="img/icon8.png" alt="">
+						<span>XXX</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="warp clear">
+				<div class="box">
+					<div class="sign-in-left left"  id="outer">
+						<div class="sign-in-left-bg1" id="inner">
+							<ul>
+								<li><img src="img/sign-in-left-bg.png" alt=""></li>
+								<li><img src="img/sign-in-left-bg1.png" alt=""></li>
+								<li><img src="img/sign-in-left-bg.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="font-box">
+							<h2>登录</h2>
+							<p>做人，人品为先，才能为次；做事，明理为先，勤奋为次.一念之差，心的格局便不一样，可以大如宇宙，也可以细如微尘</p>
+							<button class="btn1" id="btn2">点击注册</button>
+							<button class="btn2">点击登录</button>
+						</div>
+					</div>
+					
+					<div class="sign-in-right right">
+						<div class="sign-in-right1 right" >
+							<h3>欢迎登录数学考试系统</h3>
+							<div class="sign-in-box">
+								<ul>
+									<li><input type="text" placeholder="输入用户名" id="userName" value=""></li>
+									<li><input type="password" placeholder="输入密码" id="passWord" value=""></li>
+									<li><input type="text" placeholder="输入验证码" id="text" value=""><span class="show" id="radom"></span></li>
+								</ul>
+							</div>
+							<button id="btn1">登录</button>
+						</div>
+						<div class="sign-in-right2 right" style="display: none;">
+							<h3>欢迎注册数学考试系统</h3>
+							<div class="sign-in-box">
+								<ul>
+									<li><input type="text" placeholder="输入用户名" id="registerUserName" value=""></li>
+									<li><input type="password" placeholder="输入密码" id="registerPassWord1" value=""></li>
+									<li><input type="password" placeholder="再次输入密码" id="registerPassWord2" value=""></li>
+									<li><input type="text" placeholder="输入验证码" id="registerText1" value=""><span  class="show" id="registerRadom"></li>
+								</ul>
+							</div>
+							<button id="btn">注册</button>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+// 		$("#btnlocal").click(function () {
+// 			localStorage.clear();
+// 		})
+	</script>
+</html>
