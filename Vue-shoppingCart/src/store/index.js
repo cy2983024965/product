@@ -8,13 +8,11 @@ export default new Vuex.Store({
       buyProduct:[]
     },
     mutations:{
-
       // 添加商品到购物车
       show(state,val){
         val.price = val.tradePrice * val.tradeNum
         state.buyProduct.push(val)
       },
-
       //删除购物车商品
       ccdel(state,val){
        for(var i=0;i<state.buyProduct.length;i++){
@@ -25,7 +23,6 @@ export default new Vuex.Store({
          }
        }
       },
-
       // 添加商品数量
       cyAdd(state,val){
         for(var i=0;i<state.buyProduct.length;i++){
@@ -37,7 +34,6 @@ export default new Vuex.Store({
           }
         }
       },
-
       // 减少商品数量
       cyMinus(state,val){
         for(var i=0;i<state.buyProduct.length;i++){
@@ -46,11 +42,11 @@ export default new Vuex.Store({
                 state.buyProduct[i].price = state.buyProduct[i].tradePrice * state.buyProduct[i].tradeNum
             }
           if(state.buyProduct[i].tradeNum == 0){
-            state.buyProduct[i].tradeNum = 1
+                state.buyProduct[i].tradeNum = 1;
+                state.buyProduct[i].price = state.buyProduct[i].tradePrice * state.buyProduct[i].tradeNum
           }
         }
       },
-
       //清空购物车
       cyEmpty(state){
         // console.log(222)
