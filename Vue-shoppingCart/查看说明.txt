@@ -3,4 +3,4 @@
 
 删掉了依赖包：
 
-查看，只需要下载src文件夹下文件，导入src文件夹到项目目录下，在项目根目录下，cnpm下载依赖文件（"bootstrap"，"vue"，"vuex"），npm run dev运行即可查看
+查看，只需要下载到本地、导入到编辑器，在项目根目录下，cnpm下载依赖文件（"bootstrap"，"vue"，"vuex"），npm run dev运行即可查看
