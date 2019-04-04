@@ -43,6 +43,7 @@ export default new Vuex.Store({
         for(var i=0;i<state.buyProduct.length;i++){
             if(state.buyProduct[i].id == val){
                 state.buyProduct[i].tradeNum--
+                state.buyProduct[i].price = state.buyProduct[i].tradePrice * state.buyProduct[i].tradeNum
             }
           if(state.buyProduct[i].tradeNum == 0){
             state.buyProduct[i].tradeNum = 1
